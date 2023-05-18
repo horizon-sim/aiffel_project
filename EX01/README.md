@@ -100,6 +100,8 @@ df.drop(["datetime", "minute", "second"], axis=1, inplace=True)
 df
 ```
 "Inplace= True로 쓰는 방법이 조금 더 간결하하고 좋은것 같습니다. Good!"
+second, minute column을 지우는 근거에 대한 설명이 적절하였습니다.
+casual, registered feature를 왜 제거했는지에 대한 설명도 있으면 좋을 것 같습니다(직접적인 인과관계를 같는 High covarriance를 많이 넣는것은 model 해당 feature들에 너무 크게 영향 받을수 있다는 설명 등..)
 ```python
 # (6) 학습된 모델로 X_test에 대한 예측값 출력 및 손실함수값 계산
 from sklearn.metrics import mean_squared_error
