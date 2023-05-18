@@ -12,7 +12,7 @@
 -----------------------------------------------------------------------
 ## Project 1
 - Dataset : diabetes Datset
-- Problem : Linear regression for Given Target data and Visualization for compare between predict and Ground truth
+- Problem : Solve Regression problem using given Loss function and gradient descent method for Given Target data and Visualization to compare between predict and Ground truth
 
 ```python
 import pandas as pd
