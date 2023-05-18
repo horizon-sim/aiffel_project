@@ -40,7 +40,7 @@ def gradient(x, w, b, y):
     db = 2 * (y_pred - y).mean()
     return dw, db
 ```
-"The notes described in between are very legible => Good!"
+"The notes described in between codes are very legible => Good!"
 ```python
 # (9) 모델 학습하기
 
@@ -49,7 +49,7 @@ b = np.random.rand()
 
 w,b
 ```
-"It would be easier to read if we explain the size when we initialize W"
+"It would be easier to read if we explain the size when we initialize W?"
 ```python
 losses = []
 
