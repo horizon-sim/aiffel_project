@@ -2,7 +2,7 @@
 ### Team : 심재형
 ### Reviewer : 김신성
 -----------------------------------------------------------------------
-## I review project 1,2 following above rules
+## I review project 3 following above rules
 - 1.Did the code work properly and fix the given issue?
 - 2.Did I look at the comments and understand the author's code? And it is suitable?
 - 3.Is there a possibility that the code will cause an error?
