@@ -112,7 +112,9 @@ model = Model([encoder_inputs, decoder_inputs], decoder_softmax_outputs)
 model.summary()
 ```
 "We applied "attention mechanism" well to a given dataset. For more logical calculations and details of "attention mechanism", please refer to the link below"
+
 Link
+
 https://arxiv.org/abs/1706.03762
 
 
