@@ -10,7 +10,7 @@
   -각 코드별로 설명이 필요한 부분에 주석이 잘 들어가있었습니다
 - [❌] 3.코드가 에러를 유발한 가능성이 있나요?   
 - [⭕] 4.코드 작성자가 코드를 제대로 이해하고 작성했나요?
-- [⭕] 5.코드가 간결한가요?
+- [⭕] 5.코드가 간결한가요?   
   -간결합니다
 
 # 예시
@@ -36,15 +36,15 @@ def build_resnet(input_shape,
 ```
 이런식으로 레이어블록을 만드는 함수를 통해 코드를 간결하게 적어주신 부분이 좋았습니다.
 
-'''python
+```python
 ResNet_34 = build_resnet((IMAGE_SIZE, IMAGE_SIZE, 3), is_50=False, is_plain=False)
 ResNet_50 = build_resnet((IMAGE_SIZE, IMAGE_SIZE, 3), is_50=True, is_plain=False)
 Plain_34 = build_resnet((IMAGE_SIZE, IMAGE_SIZE, 3), num_classes=2, is_50=False, is_plain=True)
 Plain_50 = build_resnet((IMAGE_SIZE, IMAGE_SIZE, 3), num_classes=2, is_50=True, is_plain=True)
-'''
+```
 이런식으로 모델을 간편히 가져올 수 있다는 점을 배웠습니다.
 
-'''
+```
 137/547 [======>.......................] - ETA: 1:10 - loss: 2.3804 - accuracy: 0.4854
 Corrupt JPEG data: 65 extraneous bytes before marker 0xd9
 154/547 [=======>......................] - ETA: 1:07 - loss: 2.2012 - accuracy: 0.4872
@@ -52,5 +52,5 @@ Corrupt JPEG data: 228 extraneous bytes before marker 0xd9
 202/547 [==========>...................] - ETA: 58s - loss: 1.8631 - accuracy: 0.4915
 Corrupt JPEG data: 396 extraneous bytes before marker 0xd9
 206/547 [==========>...................] - ETA: 57s - loss: 1.8412 - accuracy: 0.4917
-'''
+```
 시간이 부족해 모델을 미처 훈련하지 못한 점이 아쉽지만 훈련이 진행되는 것을 확인할 수 있었습니다.
