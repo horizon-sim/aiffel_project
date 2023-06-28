@@ -1,6 +1,6 @@
 # AIFFEL Campus Online 4th Code Peer Review Templete
 - 코더 : 심재형
-- 리뷰어 : 김창
+- 리뷰어 : 김창완
 
 
 # PRT(PeerReviewTemplate)
