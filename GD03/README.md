@@ -1,6 +1,6 @@
 # 아이펠캠퍼스 온라인4기 피어코드리뷰
 
-- 코더 : 부석경
+- 코더 : 심재형
 - 리뷰어 : 이성주
 
 ---------------------------------------------
@@ -9,13 +9,14 @@
 ### **[⭕] 코드가 정상적으로 동작하고 주어진 문제를 해결했나요?**
 |평가문항|상세기준|완료여부|
 |-------|---------|--------|
-| 1. CutMix와 MixUp 기법을 ResNet50 분류기에 성공적으로 적용하였는가? |CutMix와 MixUp을 적용한 데이터셋으로 훈련한 각각의 ResNet 모델이 수렴하였다.| ![image](https://github.com/JeJuBOO/Aiffel_Nodes/assets/29011595/ac051af2-1ea0-4e74-8fd8-e2b6fed68246) 위와 같이 ResNet 모델로 학습하여 수렴한것을 확인하였습니다.|
-| 2. 다양한 실험을 통해 태스크에 최적인 Augmentation 기법을 찾아내었는가? | 각 Augmentation 기법을 적용하고, 그에 따른 성능 비교 분석 및 문제점을 서술하였음| ![image](https://github.com/JeJuBOO/Aiffel_Nodes/assets/29011595/3d0818c0-c327-402a-95df-d1432fdb2de5) 각 augmentation 기법을 적용하여 시각화도 하였스며, 성능 비교 분석 및 문제점을 서술함|
-| 3. 여러가지 Augmentation 기법을 적용한 결과를 체계적으로 비교분석하였는가? | 기본 Augmentation, CutMix, MixUp이 적용된 결과를 시각화와 함께 체계적으로 분석하였다 | ![image](https://github.com/JeJuBOO/Aiffel_Nodes/assets/29011595/16377d29-7f68-4d91-83f6-3713480847ad) 위와 같이 시각화하여 체계적으로 비교 분석하였습니다.|
+| 1. CAM을 얻기 위한 기본모델의 구성과 학습이 정상 진행되었는가? |ResNet50 + GAP + DenseLayer 결합된 CAM 모델의 학습과정이 안정적으로 수렴하였다.|![image](https://github.com/horizon-sim/aiffel_project/assets/29011595/95365804-885d-4e79-963d-7e16fb248b48) 위와 같이 CAM 모델로 학습하여 학습과정이 안정적으로 수렴한것을 확인하였습니다.|
+| 2. 분류근거를 설명 가능한 Class activation map을 얻을 수 있는가? | CAM 방식과 Grad-CAM 방식의 class activation map이 정상적으로 얻어지며, 시각화하였을 때 해당 object의 주요 특징 위치를 잘 반영한다.|![image](https://github.com/horizon-sim/aiffel_project/assets/29011595/a46dd2ef-a70e-4d78-8613-4047f21e734a) CAM방식의 activation map이 정상적인지 의문이지만 아래 박스를 그린것은 잘 그린것으로 보아 activation map이 잘 표현된것 같고, Grad-CAM 방식의 class activation map은 특징 위치를 잘 반영하였습니다.|
+|3. 인식결과의 시각화 및 성능 분석을 적절히 수행하였는가? | CAM과 Grad-CAM 각각에 대해 원본이미지합성, 바운딩박스, IoU 계산 과정을 통해 CAM과 Grad-CAM의 object localization 성능이 비교분석되었다.| ![image](https://github.com/horizon-sim/aiffel_project/assets/29011595/79eec3e8-db00-46b1-889e-82e335ac7aa7) IOU가 CAM방식만 있고, Grad-CAM방식은 출력되지 않았습니다.|
 
 
 ### **[⭕] 주석을 보고 작성자의 코드가 이해되었나요?**
-![image](https://github.com/JeJuBOO/Aiffel_Nodes/assets/29011595/46dd4f75-e030-4289-8db9-fe9f97f68d10)
+![image](https://github.com/horizon-sim/aiffel_project/assets/29011595/cda59acd-37f3-4307-abf5-614aac82833a)
+
  - 주석을 보고 코드가 이해하는 바가 무었인지 이해 했습니다.
 
 ### **[❌] 코드가 에러를 유발할 가능성이 있나요?**
@@ -23,8 +24,9 @@
 ### **[⭕] 코드 작성자가 코드를 제대로 이해하고 작성했나요?** (직접 인터뷰해보기)
  - 네 이해했습니다.
 ### **[⭕] 코드가 간결한가요?**
-![image](https://github.com/JeJuBOO/Aiffel_Nodes/assets/29011595/52620372-2b90-425a-84cb-4475b037e74d)
-- 위와 같이 간결하게 코드를 작성했습니다.
+![image](https://github.com/horizon-sim/aiffel_project/assets/29011595/8ae90a55-27a5-4c7c-83f9-c702626b5a47)
+
+- 위와 같이 callback 으로 checkpoint를 저장하여 잘활용한것 같ㅅ흡니다.
 ----------------------------------------------
 ### **참고 링크 및 코드 개선**
 * 코드 리뷰 시 참고한 링크가 있다면 링크와 간략한 설명을 첨부합니다.
